@@ -1,0 +1,40 @@
+@media (max-width: 768px) {
+  /* Works */
+
+  .works-inner__photos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .name-inner__title,
+  .name-inner__text,
+  .about-inner__title,
+  .works-inner__title,
+  .footer-inner__title {
+    font-size: 28px;
+  }
+
+  .works-inner__title {
+    padding-bottom: 20px;
+  }
+
+  /* About */
+
+  .about-inner__text {
+    font-size: 16px;
+  }
+
+  /* Footer */
+
+  .footer-inner__title {
+    text-align: center;
+    padding-bottom: 34px;
+  }
+}
+
+@media (max-width: 426px) {
+  /* About */
+
+  .about-inner__text {
+    width: 100%;
+  }
+}

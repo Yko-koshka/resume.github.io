@@ -1,0 +1,236 @@
+/* roboto-regular - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("../fonts/roboto-v20-latin-regular.woff2") format("woff2"),
+    url("../fonts/roboto-v20-latin-regular.woff") format("woff");
+}
+/* roboto-700 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto Bold"), local("Roboto-Bold"),
+    url("../fonts/roboto-v20-latin-700.woff2") format("woff2"),
+    url("../fonts/roboto-v20-latin-700.woff") format("woff");
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
+    url("../fonts/montserrat-v14-latin-regular.woff") format("woff");
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
+    url("../fonts/montserrat-v14-latin-700.woff") format("woff");
+}
+
+/* Global */
+
+body {
+  background-image: url(../img/draw.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #5e5e5e;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* ss variables */
+
+:root {
+  --margin-bottom: 15px;
+  --background-color: rgba(255, 255, 255, 0.644);
+}
+
+/* Modifier */
+
+.content_center {
+  min-height: 100vh;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+  margin-bottom: 15px;
+}
+
+/*=====Header
+===============================*/
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: rgb(255 232 232);
+  z-index: 10;
+}
+
+.header-inner {
+  padding: 20px 0;
+}
+
+.header-inner__lists {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.header-inner__list {
+  list-style: none;
+}
+
+.header-inner__link {
+  font-family: "Montserrat" sans-serif;
+  text-decoration: none;
+  color: rgb(100, 100, 100);
+  font-size: 18px;
+  transition: 0.5s all;
+}
+
+.header-inner__link:hover,
+.header-inner__link:focus {
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}
+
+/*=====Name
+===============================*/
+.name-inner__title,
+.name-inner__text,
+.about-inner__title,
+.works-inner__title,
+.footer-inner__title {
+  font-family: "Montserrat", serif;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.name-inner__text {
+  font-size: 26px;
+}
+
+/*=====About
+===============================*/
+.about-inner {
+  padding: 30px 0;
+}
+
+.about-inner__text {
+  width: 80%;
+  max-width: 100%;
+  padding: 0 15px;
+  text-align: center;
+  font-size: 22px;
+  line-height: 28px;
+}
+
+/*=====Works
+===============================*/
+.works-inner {
+  padding: 30px 0;
+  text-align: center;
+  margin-bottom: var(--margin-bottom);
+}
+
+.works-inner__title {
+  padding-bottom: 60px;
+}
+
+.works-inner__photos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.works-inner__photo {
+  grid-column: span 2;
+  overflow: hidden;
+  transition: 0.3s all;
+}
+
+.works-inner__photo:hover {
+  box-shadow: 3px 5px 12px rgb(155, 155, 155);
+}
+
+.works-inner__img {
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+  transition: 0.3s all;
+}
+
+.works-inner__photo:hover .works-inner__img {
+  transform: scale(1.05);
+}
+/*=====Footer
+===============================*/
+.footer-inner {
+  margin-bottom: var(--margin-bottom);
+}
+
+.footer-inner__contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 25px;
+}
+
+.footer-inner__title {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.footer-inner__tel,
+.footer-inner__email,
+.footer-inner__github {
+  margin-left: 20px;
+  color: #000;
+  transition: 0.3s all;
+}
+
+.footer-inner__tel:hover,
+.footer-inner__email:hover,
+.footer-inner__github:hover {
+  color: rgb(151, 96, 96);
+}
