@@ -5,11 +5,7 @@
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .name-inner__title,
-  .name-inner__text,
-  .about-inner__title,
-  .works-inner__title,
-  .footer-inner__title {
+  .title {
     font-size: 28px;
   }
 
