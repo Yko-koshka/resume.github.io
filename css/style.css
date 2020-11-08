@@ -135,11 +135,7 @@ a {
 
 /*=====Name
 ===============================*/
-.name-inner__title,
-.name-inner__text,
-.about-inner__title,
-.works-inner__title,
-.footer-inner__title {
+.title {
   font-family: "Montserrat", serif;
   font-size: 36px;
   line-height: 40px;
@@ -169,7 +165,6 @@ a {
 .works-inner {
   padding: 30px 0;
   text-align: center;
-  margin-bottom: var(--margin-bottom);
 }
 
 .works-inner__title {
@@ -184,6 +179,12 @@ a {
 }
 
 .works-inner__photo {
+  grid-column: span 4;
+  overflow: hidden;
+  transition: 0.3s all;
+}
+
+.works-inner__photo:nth-child(n + 2) {
   grid-column: span 2;
   overflow: hidden;
   transition: 0.3s all;
@@ -194,7 +195,6 @@ a {
 }
 
 .works-inner__img {
-  width: 500px;
   max-width: 100%;
   height: auto;
   transition: 0.3s all;
@@ -203,11 +203,9 @@ a {
 .works-inner__photo:hover .works-inner__img {
   transform: scale(1.05);
 }
+
 /*=====Footer
 ===============================*/
-.footer-inner {
-  margin-bottom: var(--margin-bottom);
-}
 
 .footer-inner__contact {
   display: flex;
