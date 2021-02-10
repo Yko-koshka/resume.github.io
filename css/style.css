@@ -173,22 +173,21 @@ a {
 
 .works-inner__photos {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 10px;
 }
 
 .works-inner__photo {
-  grid-column: span 4;
   overflow: hidden;
   transition: 0.3s all;
 }
 
-.works-inner__photo:nth-child(n + 2) {
+/* .works-inner__photo:nth-child(n + 2) {
   grid-column: span 2;
   overflow: hidden;
   transition: 0.3s all;
-}
+} */
 
 .works-inner__photo:hover {
   box-shadow: 3px 5px 12px rgb(155, 155, 155);
